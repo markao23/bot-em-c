@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-around; /* Distribui os links uniformemente */
+    align-items: center;
+    background-color: transparent;  /* Cor de fundo do menu */
+    padding: 10px 20px; /* Espaçamento interno para o menu */
+}
+
+.user {
+    float: right; /* Posiciona à direita do menu */
+    display: flex; /* Permite alinhamento mais fácil */
+    align-items: center; /* Alinha verticalmente */
+    color: white;
+    font-size: 15px; /* Tamanho pequeno do texto */
+    margin-right: 10px; /* Espaço entre o user e o menu */
+    margin-top: -53px;
+    padding: 15px 10px; /* Pequeno espaçamento interno */
+    background-color: transparent; /* Fundo levemente transparente */
+    border-radius: 16px; /* Cantos arredondados */
+    z-index: 1;
+}
+
+
+.user img {
+    width: 26px; /* Tamanho do ícone */
+    height: 26px;
+    margin-right: -1rem; /* Espaço entre o ícone e o texto */
+    border-radius: 50%; /* Ícone circular */
+    z-index: 0;
+}
+
+.div-background{
+    position: absolute;
+    width: 100vw; /* Largura total */
+    height: 100vh; /* Altura desejada */
+    top: 0;
+    left: 0;
+    background-image: url('assets/fundo.jpg'); /* Caminho para sua imagem */
+    background-size: cover; /* Cobre toda a área da div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.top-menu a {
+    color: black; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 14px; /* Tamanho de fonte flexível */
+    padding: 8px 5px; /* Espaçamento interno do link */
+    border-radius: 5px; /* Cantos arredondados */
+    z-index: 1;
+    transition: background-color 0.3s, color 0.3s; /* Animação suave para hover */
+}
+
+/* tela ficar responsiva pra nao utrapassar  */
+@media(max-width: 869px){
+    body{
+        font-size: 10px;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
